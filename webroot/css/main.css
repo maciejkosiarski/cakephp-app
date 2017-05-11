@@ -1,0 +1,468 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016-10-31, 12:13:52
+    Author     : maciek.pl
+*/
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two');
+
+html, body {
+    color: #ff9e29!important;
+    min-height: 100%;
+    font-family: 'Shadows Into Light Two', cursive!important;
+    font-size: 16px;
+}
+.wrap {
+    height: 100%
+}
+
+.main-login{
+    background-image: url("../img/img_2.jpg");
+    height: 100vh;
+    background-repeat: repeat-y;
+}
+
+.main-login-form{
+    background-color: #ffffff;
+    padding: 10px;
+    margin-top: 150px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebar {
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+    background-image: url("../img/img_2.jpg");
+    color: #ffffff!important;
+    height: 100vh;
+    display: block;
+}
+.sidebar, h1{
+    color: #ff9e29!important;
+    background-color: #ffffff!important;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    
+}
+
+.sidebar, h1:hover{
+    background-color: #ffffff!important;
+    padding-top: 7px;
+    padding-bottom: 6px;
+}
+
+.sidebar-element{
+   color: #ff9e29!important;
+   background-color: #ffffff!important;
+   margin-bottom: 10px;
+   width: 100%;
+}
+.sidebar-element:hover{
+    text-decoration: none;
+    color: #b1631b!important;
+    cursor: pointer;
+}
+.nav-sidebar{
+    text-align: center;
+    text-decoration: none;
+}
+.main{
+   margin-top: 10px;
+}
+
+.main-thumbnail{
+    border: 1px solid #ff9e29!important;
+}
+.caption, a{
+    color: #ff9e29!important;
+    text-decoration: none;
+}
+.caption, a:hover{
+    color: #b1631b!important;
+    text-decoration: none!important;
+}
+.main-button{
+    color: #fff!important;
+    background-color: #ff9e29;
+    border: 1px solid #b1631b;
+}
+
+.main-button:hover{
+    color: #b1631b!important;
+}
+
+.main-button-danger{
+    color: #fff!important;
+}
+
+.main-button-danger:hover{
+    color: #fff!important;
+}
+
+.shoping-icon{
+    color: #ff9e29!important;
+    background-color: #ffffff!important;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px; 
+}
+.main-img{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #ff9e29;
+}
+
+.user-panel{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    overflow: hidden;
+    opacity: 0.9;
+}
+.user-panel-box{
+    margin-right: -220px;
+    position: relative;
+    z-index: 2000;
+    transition-duration: 0.8s;
+}
+
+.user-panel-icon{
+    color: #ffffff;
+    position: absolute;
+    padding: 11px 10px 7px 7px;
+    border-radius: 20px 0 0 20px;
+    font-size: 16px;
+    top: 0;
+    left: 0;
+    width: 60px;
+    cursor: pointer;
+    border: #ff9e29 solid 1px;
+    background-color: #ff9e29;
+}
+.user-panel-icon:hover{
+    border: #b1631b solid 1px;
+    background-color: #b1631b;
+}
+.show{
+    margin-right: 0;
+    display: block!important;
+}
+
+.user-panel-options{
+    width: 220px;
+    margin-left: 40px;
+}
+.user-panel-list-group-item{
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ff9e29;
+}
+
+.borderless td{
+    padding: 10px!important;
+    font-size: 20px;
+    
+}
+
+.borderless:first-child{
+    color: #b1631b;
+}
+
+
+.main-rightside-img{
+    background-image: url("../img/img_1.jpg");
+    height: 100vh;
+    width: 100%;
+    
+}
+
+div.message {
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    font-weight: normal;
+    padding: 0 1.5rem 0 1.5rem;
+    transition: height 300ms ease-out 0s;
+    background-color: #a0d3e8;
+    color: #626262;
+    top: 15px;
+    right: 15px;
+    z-index: 999;
+    overflow: hidden;
+    height: 50px;
+    line-height: 2.5em;
+    box-radius: 5px;
+}
+
+div.message:before {
+    line-height: 0px;
+    font-size: 20px;
+    height: 12px;
+    width: 12px;
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    left: -11px;
+    background-color: #FFF;
+    padding: 12px 14px 12px 10px;
+    content: "i";
+    color: #a0d3e8;
+}
+
+div.message.error {
+    background-color: #C3232D;
+    color: #FFF;
+}
+
+div.message.error:before {
+    padding: 11px 16px 14px 7px;
+    color: #C3232D;
+    content: "x";
+}
+div.message.hidden {
+    height: 0;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.dish-thumbnail{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ingredient:hover{
+    cursor: pointer;
+}
+
+.ingredient-type{
+    color: #b1631b!important;
+}
+
+.shopping-list-checked{
+    text-decoration: line-through;
+}
+
+.main-spinner{
+    margin: 20px;
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover{
+    color: #fff!important;
+    text-decoration: none;
+    background-color: #ff9e29!important;
+    outline: 0;
+}
+
+.add-meal-button{
+    padding: 10px 0px 0px 0px;
+    color: #ff9e29!important;
+    float: left;
+}
+
+.add-meal-button:hover{
+    color: #b1631b!important;
+    cursor: pointer;
+}
+
+.days-icon {
+    margin-top: 20px;
+    color: #ff9e29!important;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    color: #444444;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+.days-icon .label {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.label-warning{
+    background-color: #b1631b!important;
+}
+
+.has-switch {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 1.231;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    width: 80px;
+    -webkit-mask: url('../img/mask.png') 0 0 no-repeat;
+    mask: url('../img/mask.png') 0 0 no-repeat;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.has-switch.deactivate {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    cursor: default !important;
+}
+.has-switch.deactivate label,
+.has-switch.deactivate span {
+    cursor: default !important;
+}
+.has-switch > div {
+    width: 162%;
+    position: relative;
+    top: 0;
+}
+.has-switch > div.switch-animate {
+    -webkit-transition: left 0.25s ease-out;
+    -moz-transition: left 0.25s ease-out;
+    -o-transition: left 0.25s ease-out;
+    transition: left 0.25s ease-out;
+    -webkit-backface-visibility: hidden;
+}
+.has-switch > div.switch-off {
+    left: -63%;
+}
+.has-switch > div.switch-off label {
+    background-color: #7f8c9a;
+    border-color: #bdc3c7;
+    -webkit-box-shadow: -1px 0 0 rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: -1px 0 0 rgba(255, 255, 255, 0.5);
+    box-shadow: -1px 0 0 rgba(255, 255, 255, 0.5);
+}
+.has-switch > div.switch-on {
+    left: 0%;
+}
+.has-switch > div.switch-on label {
+    background-color: #ff9e29;
+}
+.has-switch input[type=checkbox] {
+    display: none;
+}
+.has-switch span {
+    cursor: pointer;
+    font-size: 14.994px;
+    font-weight: 700;
+    float: left;
+    height: 29px;
+    line-height: 19px;
+    margin: 0;
+    padding-bottom: 6px;
+    padding-top: 5px;
+    position: relative;
+    text-align: center;
+    width: 50%;
+    z-index: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: 0.25s ease-out;
+    -moz-transition: 0.25s ease-out;
+    -o-transition: 0.25s ease-out;
+    transition: 0.25s ease-out;
+    -webkit-backface-visibility: hidden;
+}
+.has-switch span.switch-left {
+    border-radius: 30px 0 0 30px;
+    background-color: #b1631b;
+    color: #ff9e29;
+    border-left: 1px solid transparent;
+}
+.has-switch span.switch-right {
+    border-radius: 0 30px 30px 0;
+    background-color: #bdc3c7;
+    color: #ffffff;
+    text-indent: 7px;
+}
+.has-switch span.switch-right [class*="fui-"] {
+    text-indent: 0;
+}
+.has-switch label {
+    border: 4px solid #2A3542;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    float: left;
+    height: 29px;
+    margin: 0 -21px 0 -14px;
+    padding: 0;
+    position: relative;
+    vertical-align: middle;
+    width: 29px;
+    z-index: 100;
+    -webkit-transition: 0.25s ease-out;
+    -moz-transition: 0.25s ease-out;
+    -o-transition: 0.25s ease-out;
+    transition: 0.25s ease-out;
+    -webkit-backface-visibility: hidden;
+}
+.switch-square {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -webkit-mask: url('../img/mask.png') 0 0 no-repeat;
+    mask: url('../img/mask.png') 0 0 no-repeat;
+}
+.switch-square > div.switch-off label {
+    border-color: #7f8c9a;
+    border-radius: 6px 0 0 6px;
+}
+.switch-square span.switch-left {
+    border-radius: 6px 0 0 6px;
+}
+.switch-square span.switch-left [class*="fui-"] {
+    text-indent: -10px;
+}
+.switch-square span.switch-right {
+    border-radius: 0 6px 6px 0;
+}
+.switch-square span.switch-right [class*="fui-"] {
+    text-indent: 5px;
+}
+.switch-square label {
+    border-radius: 0 6px 6px 0;
+    border-color: #ff9e29;
+}
+
+.modal-close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #ff9e29;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+}
+
+.modal-close:hover {
+    cursor: pointer;
+    color: #bdc3c7!important;
+}
